@@ -1,0 +1,8 @@
+{
+  "name": "papernest-automation-test",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cypress": "*",
+    "cypress-plugin-stripe-elements": "^1.0.2"
+  }
+}

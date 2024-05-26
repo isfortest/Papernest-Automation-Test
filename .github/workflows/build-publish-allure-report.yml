@@ -7,9 +7,6 @@ jobs:
      - name: Checkout GitCode
        uses: actions/checkout@v3
 
-     - name: Display Current Branch
-       run: echo "Current branch is ${{ github.ref }}"
-
      - name: Run Cypress Test On Chrome
        uses: cypress-io/github-action@v4
        with:

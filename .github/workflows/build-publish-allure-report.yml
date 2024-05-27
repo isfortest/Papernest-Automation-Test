@@ -7,11 +7,23 @@ jobs:
      - name: Checkout GitCode
        uses: actions/checkout@v3
 
-     - name: Run Cypress Test On Chrome
-       uses: cypress-io/github-action@v4
-       with:
-         command: npx cypress run
-         browser: chrome
+     - name: Set up Docker Compose
+       run: sudo apt-get update && sudo apt-get install -y docker-compose
+
+     - name: Build and run Cypress tests using Docker Compose
+       run: docker-compose up --abort-on-container-exit
+
+     - name: Display logs for Cypress Chrome
+       if: failure()
+       run: docker-compose logs cypress-chrome
+
+     - name: Display logs for Cypress Firefox
+       if: failure()
+       run: docker-compose logs cypress-firefox
+
+     - name: Shutdown Docker Compose
+       if: always()
+       run: docker-compose down
 
      - name: Load test report history
        uses: actions/checkout@v3

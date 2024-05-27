@@ -11,7 +11,7 @@ jobs:
        uses: cypress-io/github-action@v4
        with:
          command: npx cypress run
-         browser: chrome
+         browser: firefox
 
      - name: Load test report history
        uses: actions/checkout@v3

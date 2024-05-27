@@ -5,7 +5,7 @@ services:
     environment:
       - CYPRESS_BROWSER=chrome
     volumes:
-      - ./cypress:/e2e
+      - ./:/e2e
     working_dir: /e2e
     entrypoint: ["npx", "cypress", "run", "--browser", "chrome"]
 
@@ -14,6 +14,6 @@ services:
     environment:
       - CYPRESS_BROWSER=firefox
     volumes:
-      - ./cypress:/e2e
+      - ./:/e2e
     working_dir: /e2e
     entrypoint: ["npx", "cypress", "run", "--browser", "firefox"]

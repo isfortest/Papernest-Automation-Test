@@ -5,5 +5,8 @@
     "allure-commandline": "^2.29.0",
     "cypress": "*",
     "cypress-plugin-stripe-elements": "^1.0.2"
+  },
+  "dependencies": {
+    "allure-cypress": "^2.15.1"
   }
 }

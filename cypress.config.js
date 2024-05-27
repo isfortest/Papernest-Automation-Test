@@ -10,5 +10,6 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/**/*.{cy,spec}.{js,ts}"
   },
   chromeWebSecurity: false,
-  projectId: "92hrhq"
+  projectId: "92hrhq",
+  video: true
 })

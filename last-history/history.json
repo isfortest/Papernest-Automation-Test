@@ -1,0 +1,1 @@
+{"d75c5712f4ec6f1c0dd099b9d5f09e68:d41d8cd98f00b204e9800998ecf8427e":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"20b94a4c12ca724a","reportUrl":"https://isfortest.github.io/papernest-automation-test/16//#testresult/20b94a4c12ca724a","status":"passed","time":{"start":1716841319227,"stop":1716841346218,"duration":26991}}]}}

@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "devDependencies": {
     "allure-commandline": "^2.29.0",
+    "allure-cypress": "^2.15.1",
     "cypress": "*",
     "cypress-plugin-stripe-elements": "^1.0.2"
-  },
-  "dependencies": {
-    "allure-cypress": "^2.15.1"
   }
 }

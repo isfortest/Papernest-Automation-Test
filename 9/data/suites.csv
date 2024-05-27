@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Mon May 27 09:10:50 GMT 2024","Mon May 27 09:11:13 GMT 2024","23602","Papernest Magazine Flow","","","","","Completes the magazine address change flow",""
+"passed","Mon May 27 09:13:07 GMT 2024","Mon May 27 09:13:32 GMT 2024","25268","Papernest Magazine Flow","","","","","Completes the magazine address change flow",""

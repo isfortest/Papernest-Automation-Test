@@ -10,7 +10,7 @@ class OnboardingPage {
     enterArrivalDate(day, month, year) {
         cy.get('#poste-subscription\\.begin_date').click();
         cy.get('.mat-calendar-period-button').click();
-            cy.get('.mat-calendar-body-cel').contains(year).click();
+            cy.get('.mat-calendar-body-cell').contains(year).click();
             cy.get('.mat-calendar-body-cell').contains(month).click();
             cy.get('.mat-calendar-body-cell').contains(day).click();
     }

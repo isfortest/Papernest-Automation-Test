@@ -5,16 +5,17 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: Checkout GitCode
-       uses: actions/checkout@v3
+       uses: actions/checkout@v4
 
      - name: Run Cypress Test On Chrome
-       uses: cypress-io/github-action@v4
+       uses: cypress-io/github-action@v6
        with:
-         command: npx cypress run
+         build: npm run build
+         start: npm start
          browser: chrome
 
      - name: Load test report history
-       uses: actions/checkout@v3
+       uses: actions/checkout@v4
        if: always()
        continue-on-error: true
        with:

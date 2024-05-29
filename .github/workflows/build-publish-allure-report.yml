@@ -2,7 +2,7 @@ name: Run tests and publish report
 on: [push]
 jobs:
  test-cypress-papernest:
-   runs-on: ubuntu-22.04
+   runs-on: ubuntu-latest
    steps:
      - name: Checkout GitCode
        uses: actions/checkout@v4
@@ -10,8 +10,7 @@ jobs:
      - name: Run Cypress Test On Chrome
        uses: cypress-io/github-action@v6
        with:
-         build: npm run build
-         start: npm start
+         command: npx cypress run
          browser: chrome
 
      - name: Load test report history
